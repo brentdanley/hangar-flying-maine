@@ -1,14 +1,17 @@
 <script lang="ts">
+	import Header from './header.svelte';
+	import Footer from './footer.svelte';
 	import '../app.scss';
 </script>
 
 <div class="layout">
-	<!-- header -->
+	<Header />
 
 	<main>
 		<slot />
 	</main>
-	<!-- footer -->
+
+	<Footer />
 </div>
 
 <style lang="scss">
