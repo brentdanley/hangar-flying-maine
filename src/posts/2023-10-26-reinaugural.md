@@ -7,7 +7,7 @@ categories:
 published: true
 ---
 
-### I am thrilled to announce the return of our beloved aviation social event: **Hangar Flying Maine**!
+### I am thrilled to announce the return of our beloved aviation social event: Hangar Flying Maine!
 
 In the spirit of fostering a sense of community among aviation enthusiasts, **Hangar Flying Maine** welcomes pilots, flight instructors, air traffic controllers, airplane owners, flying clubs, flight schools, and anyone with an interest in aviation. Whether you're a seasoned aviator or simply fascinated by the world of flight, you're sure to find like-minded individuals.
 
@@ -16,11 +16,11 @@ In the spirit of fostering a sense of community among aviation enthusiasts, **Ha
 **Date: October 26th, 2023 @ 18:00<br />
 Location: Novare Res Bier Cafe, Portland, Maine**
 
-**Hangar Flying Maine** has [a rich history](/history) and has been a cornerstone of our aviation community. While the pandemic forced a temporary hiatus, we are thrilled to mark this gathering as a re-inaugural event, signifying the resilience and enduring spirit of aviation enthusiasts in our region.
+Hangar Flying Maine has [a rich history](/history) and has been a cornerstone of our aviation community. While the pandemic forced a temporary hiatus, we are thrilled to mark this gathering as a re-inaugural event, signifying the resilience and enduring spirit of aviation enthusiasts in our region.
 
-Mark your calendars because **Hangar Flying Maine** is now a monthly fixture, occurring every fourth Thursday of the month.
+Mark your calendars because Hangar Flying Maine is now a monthly fixture, occurring every fourth Thursday of the month.
 
-Join us for an evening of camaraderie, shared passion, and perhaps even some exciting aviation anecdotes. Whether you're looking to network, discuss the latest aviation technologies, or simply relax in the company of like-minded individuals, **Hangar Flying Maine** is the perfect platform for all things aviation.
+Join us for an evening of camaraderie, shared passion, and perhaps even some exciting aviation anecdotes. Whether you're looking to network, discuss the latest aviation technologies, or simply relax in the company of like-minded individuals, Hangar Flying Maine is the perfect platform for all things aviation.
 
 Feel free to spread the word and bring along friends who share your love for flying, as the more, the merrier. And if you're not already on the email list, [sign up](/signup) to receive monthly notifications about our exciting aviation social events.
 
