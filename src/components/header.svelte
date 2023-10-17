@@ -51,18 +51,15 @@
 	a {
 		color: inherit;
 		text-decoration: none;
+
+		&:hover {
+			color: white;
+		}
 	}
 
-	@media (min-width: 768px) {
-		nav {
-			display: flex;
-			justify-content: space-between;
-		}
-
+	@media (max-width: 768px) {
 		.links {
-			display: flex;
-			gap: var(--size-7);
-			margin-block: 0;
+			justify-content: center;
 		}
 	}
 </style>
