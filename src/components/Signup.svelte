@@ -110,8 +110,8 @@
 <style lang="scss">
 	#mc_embed_signup {
 		display: flex;
-		width: 600px;
-		max-width: 100%;
+		width: 100%;
+		max-width: 600px;
 		flex-direction: column;
 		align-items: left;
 

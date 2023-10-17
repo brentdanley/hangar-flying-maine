@@ -19,7 +19,7 @@
 				{#if post.date}
 					<p class="date">{formatDate(post.date)}</p>
 				{/if}
-				<h3><a href={post.slug} class="title">{post.title}</a></h3>
+				<h3 class="title"><a href={post.slug}>{post.title}</a></h3>
 				{#if post.description}
 					<p class="description">{post.description}</p>
 				{/if}
@@ -31,32 +31,33 @@
 <style lang="scss">
 	.posts {
 		display: grid;
-		gap: 2rem;
+		padding: 0;
 	}
 
 	.post {
-		max-inline-size: var(--size-content-3);
 		list-style: none;
 
 		.title {
-			text-decoration: none;
+			margin: 0.25rem 0;
 		}
 
 		a {
 			color: inherit;
+			text-decoration: none;
 		}
 
 		.date {
+			font-size: 0.75rem;
 			color: var(--light-font);
 			background-color: var(--dark-font);
 			border-radius: 0.25rem;
 			width: fit-content;
 			padding: 0.25rem 0.5rem;
+			margin: 0;
 		}
-	}
 
-	.post:not(:last-child) {
-		border-bottom: 1px solid var(--border);
-		padding-bottom: var(--size-7);
+		.description {
+			margin: 0.25rem 0;
+		}
 	}
 </style>

@@ -24,22 +24,23 @@
 		background-color: var(--secondary-color);
 		color: var(--light-font);
 		display: grid;
-		padding: 1rem 2rem;
 		grid-template-rows: auto 1fr;
 		grid-template-areas: 'title' 'links';
 	}
 
 	.title {
 		grid-area: title;
-		font-size: 2rem;
+		font-size: clamp(1.5rem, 3vw, 4rem);
 		text-transform: capitalize;
 		font-family: 'Young Serif', serif;
 		text-align: center;
+		padding: 2rem;
 	}
 	.links {
 		grid-area: links;
 		display: flex;
 		justify-content: flex-end;
+		background: #c81c1c;
 		font-family: 'Young Serif', serif;
 
 		li {
@@ -58,6 +59,9 @@
 	}
 
 	@media (max-width: 768px) {
+		.title {
+			padding: 1.5rem 1rem;
+		}
 		.links {
 			justify-content: center;
 		}
