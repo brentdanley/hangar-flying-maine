@@ -33,5 +33,5 @@ Keep the blue side up!
 Brent Danley<br />
 [brent@hangarflyingmaine.com](mailto:brent@hangarflyingmaine.com)
 
-_Print and post this flyer at your local airport!_
-<img src="/images/MHF_202310_POSTER2.png" style="width: 300px" />
+_Print and post this flyer at your local airport! (Click to download)_
+<a href="/images/MHF_202310_POSTER2.png" download="202310-poster.png"><img src="/images/MHF_202310_POSTER2.png" style="width: 300px" /></a>
