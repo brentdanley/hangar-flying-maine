@@ -13,8 +13,8 @@ In the spirit of fostering a sense of community among aviation enthusiasts, **Ha
 
 ### Event Details
 
-Date: October 26th, 2023 @ 18:00<br />
-Location: Novare Res Bier Cafe, Portland, Maine
+**Date: October 26th, 2023 @ 18:00<br />
+Location: Novare Res Bier Cafe, Portland, Maine**
 
 **Hangar Flying Maine** has [a rich history](/history) and has been a cornerstone of our aviation community. While the pandemic forced a temporary hiatus, we are thrilled to mark this gathering as a re-inaugural event, signifying the resilience and enduring spirit of aviation enthusiasts in our region.
 
