@@ -1,6 +1,6 @@
 ---
-title: The History of Maine Hangar Flying
-description: The history of Maine Hangar Flying
+title: Hangar Flying Maine, A History
+description: The history of Hangar Flying Maine
 date: '2023-04-06'
 categories:
   - about
@@ -16,4 +16,4 @@ Jeff kept it going on the first Thursday of the month for the next six years wit
 
 In November of 2013, Annie Beaulieu came to a Hangar Flying night ... and the group was never the same. She spread the word across more of Maine and invited controllers over the radio as she participated in many, many compassion flight missions. She rebranded it has Portland Pilot Burger Night (although Hangar Flying was still used as well) and even got a discount rate at the Hampton so visiting pilots could stay overnight if they wanted a beer. Annie and Jeff both sent out monthly reminders. Participation was varied from lows of 8-10 people to nights when almost 50 pilots, controllers, and other aviation enthusiasts were in attendance. Sebago waitstaff apparently looked forward to the group each month, requesting to be on the email reminder as well.
 
-Covid finally shut it down. It’s been dormant since.
+**~ Jeff Van West**

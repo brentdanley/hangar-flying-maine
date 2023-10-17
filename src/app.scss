@@ -1,2 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital@0;1&family=Young+Serif&display=swap');
+
+// Add global colors and typography here
+:root {
+	--primary-color: #519fac;
+	--secondary-color: #e66000;
+	--tertiary-color: #bb7950;
+	--dark-font: #0a5060;
+	--light-font: #f9ffa8;
+}
+
 html {
+	font-size: 62.5%;
+	font-size: 1.2rem;
+
+	h1,
+	h2,
+	h3,
+	h4,
+	h5,
+	h6 {
+		font-family: 'Young Serif', serif;
+		color: var(--dark-font);
+	}
+
+	body {
+		margin: 0;
+		font-family: 'Raleway', sans-serif;
+	}
+}
+
+.content-container {
+	max-width: 1200px;
+	margin: 0 auto;
 }

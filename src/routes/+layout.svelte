@@ -8,7 +8,9 @@
 	<Header />
 
 	<main>
-		<slot />
+		<div class="content-container">
+			<slot />
+		</div>
 	</main>
 
 	<Footer />
@@ -17,6 +19,7 @@
 <style lang="scss">
 	.layout {
 		display: grid;
+		grid-template-rows: auto 1fr auto;
 		min-height: 100vh;
 	}
 

@@ -2,30 +2,50 @@
 	import * as config from '$lib/config';
 </script>
 
-<nav>
+<header>
 	<!-- Title -->
 	<a href="/" class="title">
-		<b>{config.title}</b>
+		{config.title}
 	</a>
 
 	<!-- Navigation -->
-	<ul class="links">
+	<nav class="links">
 		<li>
 			<a href="/history">History</a>
 		</li>
 		<li>
-			<a href="/contact">Contact</a>
+			<a href="/signup">Sign Up</a>
 		</li>
-	</ul>
-</nav>
+	</nav>
+</header>
 
-<style>
-	nav {
-		padding-block: var(--size-7);
+<style lang="scss">
+	header {
+		background-color: var(--secondary-color);
+		color: var(--light-font);
+		display: grid;
+		padding: 1rem 2rem;
+		grid-template-rows: auto 1fr;
+		grid-template-areas: 'title' 'links';
 	}
 
+	.title {
+		grid-area: title;
+		font-size: 2rem;
+		text-transform: capitalize;
+		font-family: 'Young Serif', serif;
+		text-align: center;
+	}
 	.links {
-		margin-block: var(--size-7);
+		grid-area: links;
+		display: flex;
+		justify-content: flex-end;
+		font-family: 'Young Serif', serif;
+
+		li {
+			list-style: none;
+			padding: 1rem;
+		}
 	}
 
 	a {

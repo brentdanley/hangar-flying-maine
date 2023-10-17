@@ -16,15 +16,19 @@
 	<ul class="posts">
 		{#each data.posts as post}
 			<li class="post">
-				<a href={post.slug} class="title">{post.title}</a>
-				<p class="date">{formatDate(post.date)}</p>
-				<p class="description">{post.description}</p>
+				{#if post.date}
+					<p class="date">{formatDate(post.date)}</p>
+				{/if}
+				<h3><a href={post.slug} class="title">{post.title}</a></h3>
+				{#if post.description}
+					<p class="description">{post.description}</p>
+				{/if}
 			</li>
 		{/each}
 	</ul>
 </section>
 
-<style>
+<style lang="scss">
 	.posts {
 		display: grid;
 		gap: 2rem;
@@ -32,23 +36,27 @@
 
 	.post {
 		max-inline-size: var(--size-content-3);
+		list-style: none;
+
+		.title {
+			text-decoration: none;
+		}
+
+		a {
+			color: inherit;
+		}
+
+		.date {
+			color: var(--light-font);
+			background-color: var(--dark-font);
+			border-radius: 0.25rem;
+			width: fit-content;
+			padding: 0.25rem 0.5rem;
+		}
 	}
 
 	.post:not(:last-child) {
 		border-bottom: 1px solid var(--border);
 		padding-bottom: var(--size-7);
-	}
-
-	.title {
-		font-size: var(--font-size-fluid-3);
-		text-transform: capitalize;
-	}
-
-	.date {
-		color: var(--text-2);
-	}
-
-	.description {
-		margin-top: var(--size-3);
 	}
 </style>

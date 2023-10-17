@@ -9,11 +9,8 @@
 
 <style>
 	footer {
-		padding-block: var(--size-7);
-		border-top: 1px solid var(--border);
-	}
-
-	p {
-		color: var(--text-2);
+		text-align: center;
+		background-color: var(--dark-font);
+		color: var(--light-font);
 	}
 </style>
