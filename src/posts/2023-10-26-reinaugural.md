@@ -7,9 +7,11 @@ categories:
 published: true
 ---
 
-## Due to the tragedy that continues to unfold in Lewiston, and in the interest of safety, this event has been CANCELED.
+<h2 style="color: red;">Due to the tragedy that continues to unfold in Lewiston, and in the interest of safety, this event has been CANCELED.</h2>
 
 Be sure to [sign up](/signup) to receive notifications about future events.
+
+<hr />
 
 ### I am thrilled to announce the return of our beloved aviation social event: Hangar Flying Maine!
 
