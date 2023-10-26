@@ -7,6 +7,10 @@ categories:
 published: true
 ---
 
+## Due to the tragedy that continues to unfold in Lewiston, and in the interest of safety, this event has been CANCELED.
+
+Be sure to [sign up](/signup) to receive notifications about future events.
+
 ### I am thrilled to announce the return of our beloved aviation social event: Hangar Flying Maine!
 
 In the spirit of fostering a sense of community among aviation enthusiasts, **Hangar Flying Maine** welcomes pilots, flight instructors, air traffic controllers, airplane owners, flying clubs, flight schools, and anyone with an interest in aviation. Whether you're a seasoned aviator or simply fascinated by the world of flight, you're sure to find like-minded individuals.
