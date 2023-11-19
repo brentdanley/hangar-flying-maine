@@ -2,7 +2,7 @@
 	import * as config from '$lib/config';
 </script>
 
-<header>
+<header class="header">
 	<img src="/images/HFM_logo.png" alt="HFM Logo" class="logo" />
 
 	<!-- Title -->
@@ -22,7 +22,7 @@
 </header>
 
 <style lang="scss">
-	header {
+	.header {
 		background-color: var(--secondary-color);
 		color: var(--light-font);
 		display: grid;
@@ -69,6 +69,14 @@
 	}
 
 	@media (max-width: 768px) {
+		.header {
+			grid-template-columns: 1fr;
+			grid-template-areas: 'logo' 'title' 'links';
+		}
+		.logo {
+			justify-self: center;
+			max-width: 200px;
+		}
 		.title {
 			padding: 1.5rem 1rem;
 		}
