@@ -11,7 +11,7 @@
 
 html {
 	font-size: 62.5%;
-	font-size: 1.2rem;
+	font-size: 10px;
 
 	h1,
 	h2,
@@ -23,9 +23,34 @@ html {
 		color: var(--dark-font);
 	}
 
+	h1 {
+		font-size: 4rem;
+	}
+
+	h2 {
+		font-size: 3.2rem;
+	}
+
+	h3 {
+		font-size: 2.8rem;
+	}
+
+	h4 {
+		font-size: 2.4rem;
+	}
+
+	h5 {
+		font-size: 2rem;
+	}
+
+	h6 {
+		font-size: 1.6rem;
+	}
+
 	body {
 		margin: 0;
 		font-family: 'Raleway', sans-serif;
+		font-size: 1.6rem;
 	}
 }
 
