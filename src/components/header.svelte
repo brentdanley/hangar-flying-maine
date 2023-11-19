@@ -42,7 +42,7 @@
 	}
 	.title {
 		grid-area: title;
-		font-size: clamp(1.5rem, 3vw, 4rem);
+		font-size: clamp(1.5rem, 8vw, 4rem);
 		text-transform: capitalize;
 		font-family: 'Young Serif', serif;
 		text-align: center;
