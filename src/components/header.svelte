@@ -3,6 +3,8 @@
 </script>
 
 <header>
+	<img src="/images/HFM_logo.png" alt="HFM Logo" class="logo" />
+
 	<!-- Title -->
 	<a href="/" class="title">
 		{config.title}
@@ -24,10 +26,16 @@
 		background-color: var(--secondary-color);
 		color: var(--light-font);
 		display: grid;
-		grid-template-rows: auto 1fr;
-		grid-template-areas: 'title' 'links';
+		grid-template-columns: auto 1fr auto;
+		grid-template-areas: 'logo title links';
+		padding: clamp(0.5rem, 1vw, 2rem);
+		align-items: center;
+		justify-content: center;
 	}
 
+	.logo {
+		grid-area: logo;
+	}
 	.title {
 		grid-area: title;
 		font-size: clamp(1.5rem, 3vw, 4rem);
@@ -40,12 +48,14 @@
 		grid-area: links;
 		display: flex;
 		justify-content: flex-end;
-		background: #c81c1c;
 		font-family: 'Young Serif', serif;
 
 		li {
+			background: #c81c1c;
 			list-style: none;
-			padding: 1rem;
+			padding: 0.5rem 1rem;
+			margin: 0.3rem;
+			border-radius: 0.5rem;
 		}
 	}
 
