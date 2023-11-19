@@ -3,7 +3,7 @@
 </script>
 
 <header class="header">
-	<img src="/images/HFM_logo.png" alt="HFM Logo" class="logo" />
+	<div class="logo"><a href="/"><img src="/images/HFM_logo.png" alt="HFM Logo" /></a></div>	
 
 	<!-- Title -->
 	<a href="/" class="title">
@@ -35,6 +35,10 @@
 
 	.logo {
 		grid-area: logo;
+
+		img {
+			max-width: 100%;
+		}
 	}
 	.title {
 		grid-area: title;
