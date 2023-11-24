@@ -4,8 +4,16 @@ import type { Post } from '$lib/types';
 async function getPosts() {
 	let posts: Post[] = [];
 
+	// define the type of a post
+	type Post = {
+		title: string;
+		slug: string;
+		published: boolean;
+		date: string;
+		excerpt: string;
+	};
+
 	const paths = import.meta.glob('/src/posts/*.md', { eager: true });
-	console.log(paths);
 	for (const path in paths) {
 		const file = paths[path];
 		const slug = path.split('/').at(-1)?.replace('.md', '');
@@ -18,7 +26,7 @@ async function getPosts() {
 	}
 
 	posts = posts.sort(
-		(first, second) => new Date(second.date).getTime() - new Date(first.date).getTime()
+		(a, b) => new Date(b.date).valueOf() - new Date(a.date).valueOf()
 	);
 
 	return posts;

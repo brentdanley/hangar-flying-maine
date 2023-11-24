@@ -3,7 +3,6 @@
 	import * as config from '$lib/config';
 
 	export let data;
-	console.log('data', data);
 </script>
 
 <svelte:head>
