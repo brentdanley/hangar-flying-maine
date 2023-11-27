@@ -29,6 +29,7 @@
 		padding: 1rem;
 		text-align: center;
 		border-radius: 0.5rem;
+		margin: 1rem 2rem;
 
 		a {
 			font-weight: bold;
