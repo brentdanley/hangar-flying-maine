@@ -2,7 +2,9 @@
 title: Reinaugural October 2023
 description: Join Us for the Re-Inaugural Hangar Flying Maine Event on October 26th!
 date: '2023-10-26'
-categories:
+time: '18:00'
+location: 'Novare Res Bier Cafe'
+tags:
   - event
 published: true
 ---

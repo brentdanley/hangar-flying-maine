@@ -4,7 +4,7 @@ export type Post = {
 	title: string;
 	slug: string;
 	description?: string;
-	date?: string;
-	categories?: Categories[];
+	date?: string | number | Date;
+	tags?: Categories[];
 	published?: boolean;
 };

@@ -3,7 +3,7 @@
 </script>
 
 <header class="header">
-	<div class="logo"><a href="/"><img src="/images/HFM_logo.png" alt="HFM Logo" /></a></div>	
+	<div class="logo"><a href="/"><img src="/images/HFM_logo.png" alt="HFM Logo" /></a></div>
 
 	<!-- Title -->
 	<a href="/" class="title">
@@ -17,6 +17,9 @@
 		</li>
 		<li>
 			<a href="/signup">Sign Up</a>
+		</li>
+		<li>
+			<a href="/events">Events</a>
 		</li>
 	</nav>
 </header>
