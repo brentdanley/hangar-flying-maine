@@ -4,7 +4,7 @@ export async function load({ params }) {
 	const { slug } = params;
 
 	try {
-		const post = await import(`/src/events/${slug}.md`);
+		const post = await import(`../../../events/${slug}.md`);
 
 		return {
 			content: post.default,
