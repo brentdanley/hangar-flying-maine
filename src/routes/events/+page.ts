@@ -6,7 +6,7 @@ export async function load({ fetch }) {
 
 	// Sort posts by date
 	events.sort((a, b) => {
-		return new Date(b.date).valueOf() - new Date(a.date).valueOf();
+		return new Date(a.date).valueOf() - new Date(b.date).valueOf();
 	});
 	return { events };
 }
