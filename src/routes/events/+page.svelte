@@ -23,7 +23,7 @@
 				{#if event.date}
 					<p class="date">{formatDate(String(event.date))}</p>
 				{/if}
-				<h3 class="title"><a href={event.slug}>{event.title}</a></h3>
+				<h3 class="title"><a href={`/events/${event.slug}`}>{event.title}</a></h3>
 				{#if event.description}
 					<p class="description">{event.description}</p>
 				{/if}

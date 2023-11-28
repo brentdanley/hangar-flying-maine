@@ -3,14 +3,8 @@ import { error, redirect } from '@sveltejs/kit';
 export async function load({ params }) {
 	const { slug } = params;
 
-	// For the QR printed in various places, that points tp `/qr`, redirect to the page given below
-	const qr_slug = '/signup';
-	if (slug === 'qr') {
-		throw redirect(302, qr_slug);
-	}
-
 	try {
-		const post = await import(`../${slug}.md`);
+		const post = await import(`/src/events/${slug}.md`);
 
 		return {
 			content: post.default,
