@@ -1,5 +1,6 @@
 ---
 title: Operation Toy Drop Fly-In 2023
+description: Drop off a NEW, UNWRAPPED toy
 date: '2023-12-09'
 time: '09:00 - 11:00'
 location: 'Northeast Air and MacJets FBOs'
