@@ -14,8 +14,14 @@
 <article>
 	<!-- Title -->
 	<hgroup>
-		<h1>{data.meta.description}</h1>
-		<p>{formatDate(data.meta.date)}</p>
+		{#if data.meta.organization}
+			<h6 class="organization">{data.meta.organization}</h6>
+		{/if}
+		<h1 class="title">{data.meta.title}</h1>
+		{#if data.meta.description}
+			<h4 class="description">{data.meta.description}</h4>
+		{/if}
+		<p>{formatDate(data.meta.date)}{data.meta.time ? ` at ${data.meta.time}` : ''}</p>
 	</hgroup>
 
 	<!-- Post -->
@@ -24,18 +30,27 @@
 	</div>
 </article>
 
-<style>
+<style lang="scss">
 	article {
 		max-inline-size: var(--size-content-3);
 		margin-inline: auto;
-	}
 
-	h1 {
-		text-transform: capitalize;
-	}
+		.organization {
+			font-size: 1.75rem;
+			color: white;
+			background-color: var(--dark-font);
+			border-radius: 0.25rem;
+			width: fit-content;
+			padding: 0.5rem 1rem;
+			margin: 0 0 0.5rem 0;
+		}
 
-	h1 + p {
-		margin-top: var(--size-2);
-		color: var(--text-2);
+		.title {
+			margin-bottom: 0.5rem;
+		}
+
+		.description {
+			margin: 0 0 1rem 0;
+		}
 	}
 </style>

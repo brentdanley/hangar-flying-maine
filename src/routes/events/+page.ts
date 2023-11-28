@@ -1,12 +1,12 @@
-import type { Post } from '$lib/types';
+import type { Event } from '$lib/types';
 
 export async function load({ fetch }) {
-	const response = await fetch('api/posts?tags=event');
-	const posts: Post[] = await response.json();
+	const response = await fetch('api/events');
+	const events: Event[] = await response.json();
 
 	// Sort posts by date
-	posts.sort((a, b) => {
+	events.sort((a, b) => {
 		return new Date(b.date).valueOf() - new Date(a.date).valueOf();
 	});
-	return { posts };
+	return { events };
 }

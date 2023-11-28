@@ -7,6 +7,7 @@ location: 'Novare Res Bier Cafe'
 tags:
   - event
 published: true
+organization: 'Hangar Flying Maine'
 ---
 
 <h2 style="color: red;">Due to the tragedy that continues to unfold in Lewiston, and in the interest of safety, this event has been CANCELED.</h2>

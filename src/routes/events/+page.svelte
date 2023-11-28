@@ -14,15 +14,18 @@
 <!-- Posts -->
 
 <section>
-	<ul class="posts">
-		{#each data.posts as post}
-			<li class="post">
-				{#if post.date}
-					<p class="date">{formatDate(String(post.date))}</p>
+	<ul class="events">
+		{#each data.events as event}
+			<li class={`event${event.organization === 'Hangar Flying Maine' ? ' hfm' : ''}`}>
+				{#if event.organization}
+					<p class="organization">{event.organization}</p>
 				{/if}
-				<h3 class="title"><a href={post.slug}>{post.title}</a></h3>
-				{#if post.description}
-					<p class="description">{post.description}</p>
+				{#if event.date}
+					<p class="date">{formatDate(String(event.date))}</p>
+				{/if}
+				<h3 class="title"><a href={event.slug}>{event.title}</a></h3>
+				{#if event.description}
+					<p class="description">{event.description}</p>
 				{/if}
 			</li>
 		{/each}
@@ -30,13 +33,30 @@
 </section>
 
 <style lang="scss">
-	.posts {
+	.events {
 		display: grid;
 		padding: 0;
 	}
 
-	.post {
+	.event {
 		list-style: none;
+		margin: 0 0 1rem 0;
+
+		&.hfm {
+			padding: 1rem;
+			border: 3px solid var(--dark-font);
+			border-radius: 0.5rem;
+		}
+
+		.organization {
+			font-size: 1.75rem;
+			color: white;
+			background-color: var(--dark-font);
+			border-radius: 0.25rem;
+			width: fit-content;
+			padding: 0.5rem;
+			margin: 0 0 0.5rem 0;
+		}
 
 		.title {
 			margin: 0.25rem 0;
@@ -48,12 +68,7 @@
 		}
 
 		.date {
-			font-size: 0.75rem;
-			color: var(--light-font);
-			background-color: var(--dark-font);
-			border-radius: 0.25rem;
-			width: fit-content;
-			padding: 0.25rem 0.5rem;
+			font-size: 1.5rem;
 			margin: 0;
 		}
 
