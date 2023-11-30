@@ -45,11 +45,13 @@
 	}
 	.title {
 		grid-area: title;
-		font-size: clamp(1.5rem, 8vw, 4rem);
+		font-size: clamp(1.5rem, 6vw, 6rem);
 		text-transform: capitalize;
 		font-family: 'Young Serif', serif;
 		text-align: center;
 		padding: 2rem;
+		color: var(--light-green);
+		-webkit-text-stroke: 1px white;
 	}
 	.links {
 		grid-area: links;
