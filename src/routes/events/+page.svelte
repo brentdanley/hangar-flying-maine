@@ -16,7 +16,7 @@
 	<title>{config.title}</title>
 </svelte:head>
 
-<h1>Local Aviation Events</h1>
+<h1>Community Events</h1>
 
 <!-- Posts -->
 
