@@ -7,7 +7,6 @@
 	function formatDateWithDay(dateString: string) {
 		const dateParts = dateString.split('-').map((part) => parseInt(part, 10));
 		const date = new Date(Date.UTC(dateParts[0], dateParts[1] - 1, dateParts[2] + 1));
-		console.log('date', dateParts[2]);
 		return format(date, 'EEEE, MMMM do, yyyy');
 	}
 </script>

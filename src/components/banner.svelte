@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { differenceInDays } from 'date-fns';
+	import { daysInWeek, differenceInDays } from 'date-fns';
 	import { utcToZonedTime } from 'date-fns-tz';
 
 	const nextEventDate = utcToZonedTime(new Date('2023-11-30'), 'America/New_York'); // Replace with the date of the next event
@@ -19,8 +19,11 @@
 
 {#if daysUntilNextEvent > 0}
 	<div class={bannerClass}>
-		The next Hangar Flying Maine <a href={nextEventLink}>event</a> is in {daysUntilNextEvent}
-		{daysUntilNextEvent === 1 ? 'day' : 'days'}.
+		{#if daysUntilNextEvent === 1}
+			The next Hangar Flying Maine <a href={nextEventLink}>event</a> is today!
+		{:else}
+			The next Hangar Flying Maine <a href={nextEventLink}>event</a> is in {daysUntilNextEvent} days.
+		{/if}
 	</div>
 {/if}
 

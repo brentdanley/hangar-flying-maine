@@ -1,5 +1,6 @@
 import { json } from '@sveltejs/kit';
 import type { Event } from '$lib/types';
+import { add } from 'date-fns';
 
 async function getEvents(tags?: string[]) {
 	let events: Event[] = [];
@@ -15,7 +16,10 @@ async function getEvents(tags?: string[]) {
 
 			// Unpublish events that have already happened
 			const now = new Date();
-			const eventDate = new Date(event.date);
+			const eventDate = add(new Date(event.date), { days: 1 });
+			// console log now and eventdate to see what they look like
+			console.log('Now: ', now);
+			console.log('Event Date: ', eventDate);
 			if (eventDate < now) {
 				event.published = false;
 			}
