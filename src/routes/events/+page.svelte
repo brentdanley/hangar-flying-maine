@@ -29,7 +29,7 @@
 						{formatDateWithDay(String(event.date))}{event.time ? ` @ ${event.time}` : ''}
 					</p>
 				{/if}
-				{#if event.organization}
+				{#if event.organization && event.organization !== 'Hangar Flying Maine'}
 					<p class="organization">Brought to you by {event.organization}</p>
 				{/if}
 				{#if event.description}
