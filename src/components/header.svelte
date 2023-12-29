@@ -1,5 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config';
+	import Navigation from './Navigation.svelte';
 </script>
 
 <header class="header">
@@ -11,17 +12,7 @@
 	</a>
 
 	<!-- Navigation -->
-	<nav class="links">
-		<li>
-			<a href="/history">History</a>
-		</li>
-		<li>
-			<a href="/signup">Sign Up</a>
-		</li>
-		<li>
-			<a href="/events">Events</a>
-		</li>
-	</nav>
+	<Navigation />
 </header>
 
 <style lang="scss">
@@ -53,28 +44,9 @@
 		color: var(--light-green);
 		-webkit-text-stroke: 1px white;
 	}
-	.links {
-		grid-area: links;
-		display: flex;
-		justify-content: flex-end;
-		font-family: 'Young Serif', serif;
-
-		li {
-			background: #c81c1c;
-			list-style: none;
-			padding: 0.5rem 1rem;
-			margin: 0.3rem;
-			border-radius: 0.5rem;
-		}
-	}
 
 	a {
-		color: inherit;
 		text-decoration: none;
-
-		&:hover {
-			color: white;
-		}
 	}
 
 	@media (max-width: 768px) {
@@ -88,9 +60,6 @@
 		}
 		.title {
 			padding: 1.5rem 1rem;
-		}
-		.links {
-			justify-content: center;
 		}
 	}
 </style>
