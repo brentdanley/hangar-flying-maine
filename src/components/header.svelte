@@ -1,6 +1,6 @@
 <script lang="ts">
 	import * as config from '$lib/config';
-	import Navigation from './Navigation.svelte';
+	import PrimaryNavigation from './PrimaryNavigation.svelte';
 </script>
 
 <header class="header">
@@ -10,9 +10,9 @@
 	<a href="/" class="title">
 		{config.title}
 	</a>
-
-	<!-- Navigation -->
-	<Navigation />
+	<div class="primary-navigation-wrapper">
+		<PrimaryNavigation />
+	</div>
 </header>
 
 <style lang="scss">
@@ -21,7 +21,8 @@
 		color: var(--light-font);
 		display: grid;
 		grid-template-columns: auto 1fr auto;
-		grid-template-areas: 'logo title links';
+		grid-template-rows: 1fr auto;
+		grid-template-areas: 'logo title' 'logo primary-navigation';
 		padding: clamp(0.5rem, 1vw, 2rem);
 		align-items: center;
 		justify-content: center;
@@ -45,6 +46,13 @@
 		-webkit-text-stroke: 1px white;
 	}
 
+	.primary-navigation-wrapper {
+		grid-area: primary-navigation;
+		display: flex;
+		justify-content: right;
+		margin: 0;
+	}
+
 	a {
 		text-decoration: none;
 	}
@@ -52,7 +60,7 @@
 	@media (max-width: 768px) {
 		.header {
 			grid-template-columns: 1fr;
-			grid-template-areas: 'logo' 'title' 'links';
+			grid-template-areas: 'logo' 'title';
 		}
 		.logo {
 			justify-self: center;
@@ -60,6 +68,9 @@
 		}
 		.title {
 			padding: 1.5rem 1rem;
+		}
+		.primary-navigation-wrapper {
+			display: none;
 		}
 	}
 </style>

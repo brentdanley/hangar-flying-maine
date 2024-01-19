@@ -25,10 +25,6 @@
 	<title>{config.title}</title>
 </svelte:head>
 
-<h1>Community Events</h1>
-
-<!-- Posts -->
-
 <section>
 	<h3>Upcoming Events</h3>
 	<div class="events upcoming-events">

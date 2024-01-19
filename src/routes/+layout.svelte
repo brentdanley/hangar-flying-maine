@@ -1,10 +1,12 @@
 <script lang="ts">
-	import Header from '../components/header.svelte';
-	import Footer from '../components/footer.svelte';
+	import Navigation from '../components/MobileNavigation.svelte';
+	import Header from '../components/Header.svelte';
+	import Footer from '../components/Footer.svelte';
 	import '../app.scss';
 	import Banner from '../components/banner.svelte';
 </script>
 
+<Navigation />
 <div class="layout">
 	<Header />
 
