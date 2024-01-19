@@ -21,7 +21,8 @@
 		{#if data.meta.description}
 			<h4 class="description">{data.meta.description}</h4>
 		{/if}
-		<p>{formatDate(data.meta.date)}{data.meta.time ? ` at ${data.meta.time}` : ''}</p>
+		<p>📅 {formatDate(data.meta.date)}{data.meta.time ? ` at ${data.meta.time}` : ''}</p>
+		<p>🗺️ {data.meta.location}</p>
 	</hgroup>
 
 	<!-- Post -->

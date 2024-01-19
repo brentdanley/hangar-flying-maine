@@ -14,15 +14,8 @@ async function getEvents(tags?: string[]) {
 			const metadata = file.metadata as Omit<Event, 'slug'>;
 			const event = { ...metadata, slug } satisfies Event;
 
-			// Unpublish events that have already happened
 			const now = new Date();
 			const eventDate = add(new Date(event.date), { days: 1 });
-			// console log now and eventdate to see what they look like
-			console.log('Now: ', now);
-			console.log('Event Date: ', eventDate);
-			if (eventDate < now) {
-				event.published = false;
-			}
 			event.published && events.push(event);
 		}
 	}

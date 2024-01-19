@@ -1,10 +1,10 @@
 <script lang="ts">
-	import { daysInWeek, differenceInDays } from 'date-fns';
+	import { differenceInDays } from 'date-fns';
 	import { utcToZonedTime } from 'date-fns-tz';
 
-	const nextEventDate = utcToZonedTime(new Date('2023-11-30'), 'America/New_York'); // Replace with the date of the next event
+	const nextEventDate = utcToZonedTime(new Date('2024-01-25'), 'America/New_York'); // Replace with the date of the next event
 	const nowInEasternTime = utcToZonedTime(new Date(), 'America/New_York');
-	const nextEventLink = '/events/2023-11-30_take-two'; // Replace with the link to the next event
+	const nextEventLink = '/events/2024-01-25'; // Replace with the link to the next event
 	const daysUntilNextEvent = differenceInDays(nextEventDate, nowInEasternTime) + 1;
 
 	// set banner class based on days until next event. More than 5 days, less than 5 days, and less than three days
