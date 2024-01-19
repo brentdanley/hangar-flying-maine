@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
+	import { differenceInDays } from 'date-fns';
 
 	export let data;
 </script>
@@ -10,6 +11,14 @@
 	<meta property="og:type" content="article" />
 	<meta property="og:title" content={data.meta.title} />
 </svelte:head>
+
+{#if data.meta.date}
+	{#if differenceInDays(new Date(data.meta.date), new Date()) >= 0}
+		<span class="days-until">
+			{differenceInDays(new Date(data.meta.date), new Date())} days until this event!
+		</span>
+	{/if}
+{/if}
 
 <article>
 	<!-- Title -->
@@ -32,6 +41,23 @@
 </article>
 
 <style lang="scss">
+	.days-until {
+		display: block;
+		font-size: 1.25rem;
+		color: var(--dark-font);
+		background-color: var(--primary-font);
+		border-radius: 0.25rem;
+		padding: 0.5rem 1rem;
+		margin: 0.5rem 0;
+		text-align: center;
+		line-height: 1.5;
+		text-decoration: none;
+		text-transform: uppercase;
+		font-weight: 700;
+		text-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+		box-shadow: 0 0 1px rgba(0, 0, 0, 0.25);
+	}
+
 	article {
 		max-inline-size: var(--size-content-3);
 		margin-inline: auto;
