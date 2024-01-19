@@ -20,9 +20,6 @@ async function getEvents(tags?: string[]) {
 			// console log now and eventdate to see what they look like
 			console.log('Now: ', now);
 			console.log('Event Date: ', eventDate);
-			if (eventDate < now) {
-				event.published = false;
-			}
 			event.published && events.push(event);
 		}
 	}
