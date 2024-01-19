@@ -1,5 +1,8 @@
 <!-- Navigation.svelte -->
 <script lang="ts">
+	import { page } from '$app/stores';
+
+	$: path = $page.route.id;
 	let isOpen = false;
 
 	function toggleMenu() {
@@ -32,7 +35,7 @@
 	<button class="close" on:click={closeMenu}><i class="fas fa-times" /></button>
 	<ul class="links">
 		{#each menuItems as item}
-			<li class="menu-item">
+			<li class="menu-item{path === item.link ? ' active' : ''}">
 				<a href={item.link} on:click={closeMenu}>{item.label}</a>
 			</li>
 		{/each}
@@ -45,6 +48,7 @@
 	on:click={closeMenu}
 	on:keydown={closeMenu}
 	role="button"
+	tabindex="0"
 />
 
 <style lang="scss">
@@ -104,6 +108,10 @@
 				a {
 					color: inherit;
 					text-decoration: none;
+				}
+
+				&.active {
+					color: red;
 				}
 			}
 		}

@@ -1,6 +1,9 @@
 <script lang="ts">
+	import { page } from '$app/stores';
 	import { differenceInDays } from 'date-fns';
 	import { utcToZonedTime } from 'date-fns-tz';
+
+	$: path = `/events/${$page.params.slug}`;
 
 	const nextEventDate = utcToZonedTime(new Date('2024-01-25'), 'America/New_York'); // Replace with the date of the next event
 	const nowInEasternTime = utcToZonedTime(new Date(), 'America/New_York');
@@ -17,7 +20,7 @@
 	}
 </script>
 
-{#if daysUntilNextEvent > 0}
+{#if path !== nextEventLink && daysUntilNextEvent > 0}
 	<div class={bannerClass}>
 		{#if daysUntilNextEvent === 1}
 			The next Hangar Flying Maine <a href={nextEventLink}>event</a> is today!
