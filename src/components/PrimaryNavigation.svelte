@@ -3,6 +3,7 @@
 
 	$: path = $page.route.id;
 	const navItems = [
+		{ label: 'Map', link: '/map' },
 		{ label: 'History', link: '/history' },
 		{ label: 'Sign Up', link: '/signup' },
 		{ label: 'Events', link: '/events' }

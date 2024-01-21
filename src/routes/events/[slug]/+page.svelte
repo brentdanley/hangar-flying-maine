@@ -30,8 +30,11 @@
 		{#if data.meta.description}
 			<h4 class="description">{data.meta.description}</h4>
 		{/if}
-		<p>📅 {formatDate(data.meta.date)}{data.meta.time ? ` at ${data.meta.time}` : ''}</p>
-		<p>🗺️ {data.meta.location}</p>
+		<p>
+			<i class="fa-solid fa-calendar-day" />
+			{formatDate(data.meta.date)}{data.meta.time ? ` at ${data.meta.time}` : ''}
+		</p>
+		<p><i class="fa-solid fa-map-pin" />️ {data.meta.location}</p>
 	</hgroup>
 
 	<!-- Post -->
@@ -78,6 +81,11 @@
 
 		.description {
 			margin: 0 0 1rem 0;
+		}
+
+		.fa-map-pin,
+		.fa-calendar-day {
+			color: var(--light-green);
 		}
 	}
 </style>
