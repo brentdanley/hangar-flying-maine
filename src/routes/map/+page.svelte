@@ -98,6 +98,16 @@
 
 <div class="map-container">
 	<div id="map" class="map" />
+	<section class="map-key">
+		<div class="key-item">
+			<div class="key-item-color home-airport" />
+			<div class="key-item-label">Home airport</div>
+		</div>
+		<div class="key-item">
+			<div class="key-item-color other-airport" />
+			<div class="key-item-label">Other airport</div>
+		</div>
+	</section>
 </div>
 
 <p>
@@ -117,20 +127,9 @@
 	the skies we love to explore.
 </p>
 
-<section class="map-key">
-	<h5>Airport Map Key</h5>
-	<div class="key-item">
-		<div class="key-item-color home-airport" />
-		<div class="key-item-label">Home airport</div>
-	</div>
-	<div class="key-item">
-		<div class="key-item-color other-airport" />
-		<div class="key-item-label">Other airport</div>
-	</div>
-</section>
-
 <style lang="scss">
 	.map-container {
+		position: relative;
 		width: 100%;
 		.map {
 			width: 100%;
@@ -142,16 +141,25 @@
 			background: #fff;
 			cursor: pointer;
 			transition: all 0.3s;
-			position: relative;
 		}
 	}
 
 	.map-key {
+		position: absolute;
+		top: 0;
+		left: 0;
+		display: flex;
+		flex-direction: column;
+		gap: 8px;
+		background-color: white;
+		padding: 10px;
+		border-radius: 5px;
+		margin: 10px;
+
 		.key-item {
 			display: flex;
 			align-items: center;
 			justify-content: left;
-			margin-bottom: 10px;
 			gap: 10px;
 
 			.key-item-color {
