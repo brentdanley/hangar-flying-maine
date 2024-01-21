@@ -100,6 +100,35 @@
 	<div id="map" class="map" />
 </div>
 
+<p>
+	Welcome to our interactive map, a dynamic visual guide showcasing airports in and around Maine,
+	with a special focus on those our members call home. This map is more than just a navigation aid;
+	it's a community canvas, illustrating the places that connect us in our shared passion for
+	aviation. Each pinpoint on this map is not just a location – it's a story, a journey, a part of
+	our collective flying experience.
+</p>
+
+<p>
+	If your home airport isn't highlighted yet, or if there's any update you'd like to share, we
+	encourage you to let us know. Your contributions help make this map a richer and more accurate
+	reflection of our vibrant community. Please feel free to update your airport information or reach
+	out to me directly at <a href="mailto:brent@hangarflyingmaine.com">brent@hangarflyingmaine.com</a
+	>. Together, we're not just charting airports; we're charting our connections to each other and
+	the skies we love to explore.
+</p>
+
+<section class="map-key">
+	<h5>Airport Map Key</h5>
+	<div class="key-item">
+		<div class="key-item-color home-airport" />
+		<div class="key-item-label">Home airport</div>
+	</div>
+	<div class="key-item">
+		<div class="key-item-color other-airport" />
+		<div class="key-item-label">Other airport</div>
+	</div>
+</section>
+
 <style lang="scss">
 	.map-container {
 		width: 100%;
@@ -114,6 +143,29 @@
 			cursor: pointer;
 			transition: all 0.3s;
 			position: relative;
+		}
+	}
+
+	.map-key {
+		.key-item {
+			display: flex;
+			align-items: center;
+			justify-content: left;
+			margin-bottom: 10px;
+			gap: 10px;
+
+			.key-item-color {
+				height: 15px;
+				width: 15px;
+				border-radius: 50%;
+
+				&.home-airport {
+					background: #ff00ff;
+				}
+				&.other-airport {
+					background: #8cc63f;
+				}
+			}
 		}
 	}
 </style>
