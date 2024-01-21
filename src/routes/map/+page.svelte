@@ -26,7 +26,15 @@
 				source: 'airports',
 				paint: {
 					'circle-radius': 5,
-					'circle-color': '#8cc63f'
+					'circle-color': [
+						'match',
+						['to-string', ['get', 'ishome']],
+						'true',
+						'#ff00ff', // color for home airports
+						'false',
+						'#8cc63f', // color for other airports
+						'#fff' // default color for other airports
+					]
 				},
 				interactive: true
 			});
