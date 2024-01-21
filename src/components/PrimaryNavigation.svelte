@@ -3,10 +3,10 @@
 
 	$: path = $page.route.id;
 	const navItems = [
+		{ label: 'Events', link: '/events' },
 		{ label: 'Map', link: '/map' },
-		{ label: 'History', link: '/history' },
-		{ label: 'Sign Up', link: '/signup' },
-		{ label: 'Events', link: '/events' }
+		{ label: 'About', link: '/about' },
+		{ label: 'Sign Up', link: '/signup' }
 	];
 </script>
 

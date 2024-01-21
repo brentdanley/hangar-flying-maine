@@ -15,7 +15,7 @@
 
 	const menuItems = [
 		{ label: 'Map', link: '/map' },
-		{ label: 'History', link: '/history' },
+		{ label: 'About', link: '/about' },
 		{ label: 'Sign Up', link: '/signup' },
 		{ label: 'Events', link: '/events' }
 	];
