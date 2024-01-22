@@ -5,10 +5,11 @@
 
 	$: path = `/events/${$page.params.slug}`;
 
-	const nextEventDate = utcToZonedTime(new Date('2024-01-25'), 'America/New_York'); // Replace with the date of the next event
-	const nowInEasternTime = utcToZonedTime(new Date(), 'America/New_York');
 	const nextEventLink = '/events/2024-01-25'; // Replace with the link to the next event
-	const daysUntilNextEvent = differenceInDays(nextEventDate, nowInEasternTime) + 1;
+	const nextEventDate = utcToZonedTime(new Date('2024-01-25T18:00'), 'America/New_York'); // Replace with the date of the next event
+
+	const nowInEasternTime = utcToZonedTime(new Date(), 'America/New_York');
+	const daysUntilNextEvent = differenceInDays(nextEventDate, nowInEasternTime);
 
 	// set banner class based on days until next event. More than 5 days, less than 5 days, and less than three days
 	let bannerClass = 'banner';

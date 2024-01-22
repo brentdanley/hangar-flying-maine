@@ -1,8 +1,13 @@
 <script lang="ts">
 	import { formatDate } from '$lib/utils';
 	import { differenceInDays } from 'date-fns';
+	import { utcToZonedTime } from 'date-fns-tz';
 
 	export let data;
+
+	const tz = 'America/New_York';
+	const eventDate = utcToZonedTime(new Date(`${data.meta.date}T${data.meta.time}`), tz);
+	const daysUntil = differenceInDays(eventDate, utcToZonedTime(new Date(), tz));
 </script>
 
 <!-- SEO -->
@@ -13,9 +18,9 @@
 </svelte:head>
 
 {#if data.meta.date}
-	{#if differenceInDays(new Date(data.meta.date), new Date()) >= 0}
+	{#if daysUntil >= 0}
 		<span class="days-until">
-			{differenceInDays(new Date(data.meta.date), new Date())} days until this event!
+			{daysUntil} days until this event!
 		</span>
 	{/if}
 {/if}
@@ -23,7 +28,7 @@
 <article>
 	<!-- Title -->
 	<hgroup>
-		{#if data.meta.organization}
+		{#if data.meta.organization && data.meta.organization !== 'Hangar Flying Maine'}
 			<h6 class="organization">{data.meta.organization}</h6>
 		{/if}
 		<h1 class="title">{data.meta.title}</h1>
