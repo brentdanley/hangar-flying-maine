@@ -12,10 +12,10 @@
 <h4>What is Hangar Flying?</h4>
 <p>
 	"Many general aviation pilots enjoy 'hangar flying' almost as much as flying itself. Hangar
-	flying, of course, is the sport of meeting in one's hangar to share aviation storiesw and
-	otherwise enjoy the camaraderie that is so inherent in general aviation. Hangar flying is
-	generally informal in nature, takes place among friendes and airport neighbors, and may not even
-	take place in a hangar." ~<a
+	flying, of course, is the sport of meeting in one's hangar to share aviation stories and otherwise
+	enjoy the camaraderie that is so inherent in general aviation. Hangar flying is generally informal
+	in nature, takes place among friends and airport neighbors, and may not even take place in a
+	hangar." ~<a
 		href="https://pilot-protection-services.aopa.org/news/2020/april/01/preflight-inspection-before-hangar-flying"
 		>AOPA</a
 	>
