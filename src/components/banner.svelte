@@ -5,7 +5,7 @@
 
 	$: path = `/events/${$page.params.slug}`;
 
-	const nextEventLink = '/events/2024-01-25'; // Replace with the link to the next event
+	const nextEventLink = '/events/2024-02-22'; // Replace with the link to the next event
 	const nextEventDate = utcToZonedTime(new Date('2024-01-25T18:00'), 'America/New_York'); // Replace with the date of the next event
 
 	const nowInEasternTime = utcToZonedTime(new Date(), 'America/New_York');
